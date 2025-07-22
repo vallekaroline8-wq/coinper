@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fondo azul cielo con opacidad del 80% */
+    background-color: rgba(135, 206, 235, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+}
+
+/* Contenedor blanco con bordes circulares */
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.login-box h1 {
+    color: #1a73e8;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #495057;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #155ab6;
+}
+
+.login-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-links a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- ESTILOS PARA POSICIONAR EL ÍCONO DENTRO DEL INPUT --- */
+
+.password-input-container {
+    position: relative; /* Establece un contexto de posición */
+}
+
+/* Agrega espacio a la derecha del input para que el texto no se solape con el ícono */
+.password-input-container input {
+    padding-right: 40px; 
+}
+
+#togglePassword {
+    position: absolute; /* Posiciona el ícono de forma absoluta */
+    top: 50%;
+    right: 15px; /* Lo ubica a la derecha */
+    transform: translateY(-50%); /* Lo centra verticalmente */
+    cursor: pointer;
+    color: #6c757d;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Contraseña - Sistema de Carwash</title>
+
+    <link rel="stylesheet" href="recuperar_contraseña.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h1>Cambio de Contraseña</h1>
+            <p>Ingresa el código que enviamos a tu correo y tu nueva contraseña.</p>
+            
+            <form id="resetForm">
+                <div class="input-group">
+                    <label for="verification-code">Código de Verificación</label>
+                    <input type="text" id="verification-code" name="verification-code" required>
+                </div>
+                <div class="input-group">
+                    <label for="new-password">Nueva Contraseña</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirmar Contraseña</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="form-button">Aceptar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Seleccionamos el formulario por su ID
+        const resetForm = document.getElementById('resetForm');
+
+        // Agregamos un evento para cuando se intente enviar el formulario
+        resetForm.addEventListener('submit', function(event) {
+            // Prevenimos que la página se recargue
+            event.preventDefault();
+
+            // Obtenemos los valores de los campos de contraseña
+            const newPassword = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            // Verificamos si las contraseñas coinciden
+            if (newPassword !== confirmPassword) {
+                // Si no coinciden, mostramos una alerta de error
+                alert('Error: Las contraseñas no coinciden. Por favor, inténtalo de nuevo.');
+            } else {
+                // Si coinciden, mostramos el mensaje de éxito
+                alert('¡La contraseña se ha cambiado exitosamente!');
+                
+                // Redirigimos al usuario a la página de login
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+</body>
+</html>

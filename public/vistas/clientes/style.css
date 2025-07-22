@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa; /* Un fondo gris claro para la página */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef; /* Un resaltado más notorio en las filas de la tabla */
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004a99;
+}
+
+.btn-primary:hover {
+    background-color: #004a99;
+    border-color: #003d80;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-warning {
+    color: #fff;
+}

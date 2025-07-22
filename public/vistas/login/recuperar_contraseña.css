@@ -1,0 +1,110 @@
+/* Estilos Generales y de Fondo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(135, 206, 235, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del formulario (reutilizable) */
+.form-container {
+    text-align: center;
+}
+
+/* Caja del formulario (reutilizable) */
+.form-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 340px; /* Un poco más ancho para el texto */
+}
+
+.form-box h1 {
+    color: #1a73e8;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-box p {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* Grupos de inputs (reutilizable) */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #495057;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+/* Botón principal (reutilizable) */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #155ab6;
+}
+
+/* Enlaces inferiores (reutilizable) */
+.form-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-links a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- ESTILOS ESPECÍFICOS PARA EL ÍCONO DE CONTRASEÑA EN LOGIN --- */
+
+.password-input-container {
+    position: relative;
+}
+
+.password-input-container input {
+    padding-right: 40px; 
+}
+
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+}
